@@ -3,7 +3,8 @@ FROM alpine:3.11
 RUN echo "http://dl-4.alpinelinux.org/alpine/v3.11/main" >> /etc/apk/repositories && \
 	echo "http://dl-4.alpinelinux.org/alpine/v3.11/community" >> /etc/apk/repositories && \
 	apk update && \
-	apk add python3 \
+	apk add build-base \
+		python3 \
 		curl \
 		unzip \
 		libexif \
