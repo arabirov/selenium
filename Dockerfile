@@ -4,7 +4,7 @@ RUN echo "http://dl-4.alpinelinux.org/alpine/v3.11/main" >> /etc/apk/repositorie
     echo "http://dl-4.alpinelinux.org/alpine/v3.11/community" >> /etc/apk/repositories && \
 	
 RUN apk update && \
-    apk --no-cache add build-base \
+RUN apk --no-cache add build-base \
 		       python3 \
 		       curl \
 		       unzip \
